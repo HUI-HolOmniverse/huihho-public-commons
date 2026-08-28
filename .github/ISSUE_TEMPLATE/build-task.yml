@@ -1,7 +1,6 @@
 name: Build / improvement task
-about: Propose a bounded public-safe build, design, accessibility, documentation or code improvement
+description: Propose a bounded public-safe build, design, accessibility, documentation or code improvement
 title: "[BUILD] "
-labels: ["build", "triage"]
 body:
   - type: markdown
     attributes:
