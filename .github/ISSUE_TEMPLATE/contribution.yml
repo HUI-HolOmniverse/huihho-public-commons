@@ -1,7 +1,6 @@
 name: Public contribution
-about: Submit a public-safe HUI/H2O contribution with provenance and rights information
+description: Submit a public-safe HUI/H2O contribution with provenance and rights information
 title: "[CONTRIBUTION] "
-labels: ["public-contribution", "triage"]
 body:
   - type: markdown
     attributes:
