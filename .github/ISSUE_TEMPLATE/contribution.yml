@@ -1,0 +1,74 @@
+name: Public contribution
+about: Submit a public-safe HUI/H2O contribution with provenance and rights information
+title: "[CONTRIBUTION] "
+labels: ["public-contribution", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This form is public. Do not include secrets, private personal data, confidential material, security vulnerabilities, or unpublished sensitive HUI/H2O content.
+        Contribution does not equal truth, authority, ownership, publication, or canon.
+  - type: dropdown
+    id: contribution_type
+    attributes:
+      label: Contribution type
+      options:
+        - idea
+        - evidence
+        - critique
+        - research
+        - translation
+        - accessibility
+        - code
+        - design
+        - media
+        - governance comment
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: Contribution title
+      placeholder: Short descriptive title
+    validations:
+      required: true
+  - type: textarea
+    id: contribution
+    attributes:
+      label: Contribution
+      description: Explain the contribution, proposed change, evidence or critique.
+    validations:
+      required: true
+  - type: textarea
+    id: sources
+    attributes:
+      label: Sources / provenance
+      description: List relevant source links, citations or provenance notes. If none, say none.
+    validations:
+      required: true
+  - type: dropdown
+    id: rights
+    attributes:
+      label: Rights declaration
+      options:
+        - I own this material or can license/share it for review
+        - Public domain
+        - Link/reference only; do not republish source material
+    validations:
+      required: true
+  - type: input
+    id: attribution
+    attributes:
+      label: Public attribution name
+      description: Name/handle to associate publicly with this contribution, if desired.
+  - type: checkboxes
+    id: consent
+    attributes:
+      label: Review consent and public-safety confirmation
+      options:
+        - label: I consent to public review of this contribution.
+          required: true
+        - label: I have not included secrets, private/confidential information, or security-sensitive material.
+          required: true
+        - label: I understand that contribution does not automatically become HUI/H2O canon, authority, ownership, employment, partnership, or governance standing.
+          required: true
