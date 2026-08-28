@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Public Commons Discussions
+    url: https://github.com/HUI-HolOmniverse/huihho-public-commons/discussions
+    about: Use Discussions for public deliberation, questions and community conversation. Do not post private or security-sensitive material.
+  - name: Security boundary
+    url: https://github.com/HUI-HolOmniverse/huihho-public-commons/blob/main/SECURITY.md
+    about: Read before reporting anything security-sensitive. Do not disclose vulnerabilities publicly.
