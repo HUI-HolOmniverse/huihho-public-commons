@@ -1,0 +1,53 @@
+name: Build / improvement task
+about: Propose a bounded public-safe build, design, accessibility, documentation or code improvement
+title: "[BUILD] "
+labels: ["build", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Keep scope bounded and public-safe. Do not include credentials, confidential material, or security vulnerability details.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or opportunity
+      description: What should improve, and for whom?
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Acceptance criteria
+      description: What observable conditions would make this task complete?
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - accessibility
+        - documentation
+        - translation
+        - design
+        - frontend
+        - backend
+        - testing/readback
+        - provenance/evidence
+        - other public-safe infrastructure
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence / references
+      description: Links, screenshots, source references or reproduction notes.
+  - type: checkboxes
+    id: boundaries
+    attributes:
+      label: Boundary confirmation
+      options:
+        - label: This task is public-safe and does not require exposing protected Mater-Core content.
+          required: true
+        - label: I understand repository contribution does not confer sovereignty or institutional authority.
+          required: true
